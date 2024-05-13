@@ -37,6 +37,7 @@ const User = require("./models/user.js");
 const listingsRouter = require("./routes/listing.js");
 const reviewsRouter = require("./routes/review.js");
 const userRouter = require("./routes/user.js");
+const { saveRedirectUrl } = require("./middleware.js");
 
 
 const dbUrl=process.env.ATLASDB_URL;
@@ -89,9 +90,9 @@ const sessiomOptions = {
   },
 };
 
-// app.get("/", (req, res) => {
-//   res.send("working");
-// });
+ app.get("/", (req, res) => {
+  res.redirect("/listings");
+ });
 
 
 //SESSIONS AND FLASH
