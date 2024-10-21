@@ -52,7 +52,7 @@ router.get("/:id", wrapAsync(listingController.showListing));
 // router.post("/",
 // validateListing, //->IT IS MIDDLEWARE ONCE USER SEND A REQ THEN IT CHECK FOR SCHEMA VALIDAION once schema is validated then only it proceed
 // wrapAsync(listingController.createListing));
-
+//router.get("/:id", wrapAsync(listingController.showListing));
 //EDIT route
 router.get(
   "/:id/edit",
