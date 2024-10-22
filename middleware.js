@@ -54,6 +54,7 @@ module.exports.validateListing = (req,res,next)=>{
 //SCHEMA VALIDATION FOR REVIEWS
 module.exports.validateReview = (req,res,next)=>{
   let {error} = reviewSchema.validate(req.body);
+    //let {error}=reviewSchema(req.body);
 
   if(error){
     let errorMsg = error.details.map((el)=>el.message).join(",");
