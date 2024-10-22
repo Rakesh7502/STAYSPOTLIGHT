@@ -28,6 +28,7 @@ const session = require("express-session");
 //mongo session
 const MongoStore= require('connect-mongo');
 const flash = require("connect-flash");
+//const mongoose=reqiure('connect-mongo');
 //AUTHENTICATIONn
 const passport = require("passport");
 const LocalStrategy =require("passport-local");
