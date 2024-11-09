@@ -33,3 +33,7 @@ wrapAsync(reviewController.createReview));
 // const Listing = require("../models/listing.js");
 // const {validateReview, isLoggedIn, isReviewAuthor} = require("../middleware.js");
   
+//router.delete("/:reviewId" ,
+//  isLoggedIn,
+ //isReviewAuthor,
+//  wrapAsync(reviewController.destroyReview));
