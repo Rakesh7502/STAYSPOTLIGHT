@@ -19,5 +19,17 @@ const reviewSchema= new Schema({
         ref : "User",
     },
 });
-
+const reviewSchema1=new Schema({
+    comment:String,
+    rating:{
+        type:Number,
+        min:1,
+        max:5,
+    },
+    Ownned = String,
+    author : {
+        type : Schema.Types.ObjectId,
+        ref : "User",
+    },
+});
 module.exports=mongoose.model("Review",reviewSchema);
