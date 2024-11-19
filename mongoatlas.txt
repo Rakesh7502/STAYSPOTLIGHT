@@ -1,5 +1,0 @@
-mongo atlas
-WWLTEg544zgt3ltZ
-projectassests
-
-mongodb+srv://projectassests:WWLTEg544zgt3ltZ@cluster0.fnuukuk.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
