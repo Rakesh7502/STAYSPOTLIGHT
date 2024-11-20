@@ -15,13 +15,12 @@ main()
 async function main(){
     await mongoose.connect(MONGO_url);
 }
-
 //Intialising the data to DB
 const initDB=async ()=>{
     await Listing.deleteMany({});
     await Listing.insertMany(initData.data);
     console.log("data was intialised");
     
-};
+}
 
 initDB();
