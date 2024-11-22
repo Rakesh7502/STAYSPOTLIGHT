@@ -12,5 +12,12 @@ const userSchema = new Schema({
 
 //automatically adds username,hash password and salting
 userSchema.plugin(passportLocalMongoose);
+const userSchema1 = new Schema({
+    email :{
+        type : String,
+        required : true
+    }
+    created_at:date(),
+});
 
 module.exports = mongoose.model("User",userSchema);
